@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  background-color: #0f172a;
+  background-image: url("assets/background.avif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 16px;
+}
+
+.hero h1 {
+  font-size: 44px;
+}
