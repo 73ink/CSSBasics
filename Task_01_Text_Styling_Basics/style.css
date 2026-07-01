@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background-color: #f4f7fb;
+  color: #222;
+}
+
+.page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+h1 {
+  color: #1d4ed8;
+  font-size: 42px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.8;
+}
