@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 12 - Enterprise Control Panel UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar shadow-md">
+    <div class="brand">EnterpriseUI</div>
+    <label class="search-label" for="search">Search</label>
+    <input id="search" class="search" type="search" placeholder="Search dashboard">
+    <div class="profile">
+      <div class="alert-icon">🔔<span class="badge">5</span></div>
+      <span>Admin User</span>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <nav>
+      <a class="active" href="#overview">Overview</a>
+      <a href="#analytics">Analytics</a>
+      <div class="nested-menu">
+        <span>Management</span>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+      </div>
+      <a href="#reports">Reports</a>
+      <a href="#settings">Settings</a>
+    </nav>
+  </aside>
+
+  <main class="main-content" id="overview">
+    <section class="hero-card glass-card">
+      <div class="hero-overlay">
+        <h1>Enterprise Control Panel UI</h1>
+        <p>A reusable CSS architecture with typography, buttons, cards, grid systems, tables, effects, and responsive design.</p>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-danger">Danger</button>
+      </div>
+    </section>
+
+    <section class="stats-grid" id="analytics">
+      <article class="stat-card card accent-blue">
+        <span class="icon">📈</span>
+        <h2>Total Sales</h2>
+        <strong>24,800</strong>
+      </article>
+      <article class="stat-card card accent-green">
+        <span class="icon">👥</span>
+        <h2>Users</h2>
+        <strong>8,420</strong>
+      </article>
+      <article class="stat-card card accent-orange">
+        <span class="icon">🧾</span>
+        <h2>Orders</h2>
+        <strong>1,294</strong>
+      </article>
+      <article class="stat-card card accent-purple">
+        <span class="icon">✅</span>
+        <h2>Success Rate</h2>
+        <strong>97%</strong>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <article class="card table-card" id="projects">
+        <h2>Project Data</h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>Project</th><th>Status</th><th>Owner</th><th>Budget</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Website Redesign</td><td>Active</td><td>Aisha</td><td>OMR 900</td></tr>
+              <tr><td>CRM Upgrade</td><td>Review</td><td>Salim</td><td>OMR 1,500</td></tr>
+              <tr><td>Mobile Portal</td><td>Planning</td><td>Maha</td><td>OMR 2,100</td></tr>
+              <tr><td>Support System</td><td>Done</td><td>Ali</td><td>OMR 700</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="card chart-card" id="reports">
+        <h2>Chart Placeholder</h2>
+        <div class="bars">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </article>
+
+      <aside class="right-panel card" id="team">
+        <h2>Information Panel</h2>
+        <ul>
+          <li>Next review meeting: Sunday</li>
+          <li>Two high-priority tickets</li>
+          <li>Quarter report is ready</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer" id="settings">
+    <p>&copy; 2026 EnterpriseUI. Built with HTML and CSS only.</p>
+  </footer>
+</body>
+</html>
