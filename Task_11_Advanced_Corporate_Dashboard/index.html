@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 11 - Advanced Real-World CSS Layout System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-header">
+    <div class="logo">NovaCorp</div>
+    <nav class="top-nav">
+      <a href="#overview">Overview</a>
+      <a href="#reports">Reports</a>
+      <a href="#settings">Settings</a>
+    </nav>
+  </header>
+
+  <aside class="sidebar">
+    <a href="#overview">Dashboard</a>
+    <a href="#cards">Cards</a>
+    <a href="#reports">Reports</a>
+    <a href="#settings">Settings</a>
+  </aside>
+
+  <main class="dashboard" id="overview">
+    <section class="hero-panel">
+      <div class="overlay">
+        <h1>Corporate Website Dashboard</h1>
+        <p>A responsive dashboard layout using flexbox, grid, positioning, visual effects, and transitions.</p>
+      </div>
+    </section>
+
+    <section class="card-grid" id="cards">
+      <article class="card feature-card">
+        <span class="notification-badge">3</span>
+        <h2>Business Performance</h2>
+        <p>Monthly performance increased across key service channels with stronger customer engagement.</p>
+        <button>View Details</button>
+      </article>
+      <article class="card">
+        <h2>Client Growth</h2>
+        <p>New clients joined after improving support response time and service quality.</p>
+        <button>Open</button>
+      </article>
+      <article class="card filtered-card">
+        <h2>Reports</h2>
+        <p>This card uses a filter effect and smooth hover animation.</p>
+        <button>Read</button>
+      </article>
+      <article class="card overflow-card" id="reports">
+        <h2>Long Update</h2>
+        <p>This content area demonstrates overflow. The text is longer than the available card height, so the user can scroll inside the card. This is useful for dashboards that display logs, alerts, or long notes.</p>
+        <p>Extra update: System stability improved this week after maintenance.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer" id="settings">
+    <p>&copy; 2026 NovaCorp Dashboard. All rights reserved.</p>
+  </footer>
+</body>
+</html>
