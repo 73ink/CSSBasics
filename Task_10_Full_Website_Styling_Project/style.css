@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.site-header h1 {
+  font-size: 26px;
+  color: #48096c;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+.hero {
+  min-height: 70vh;
+  padding: 40px;
+  background-color: #1e3a8a;
+  background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)), url("assets/company-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  animation: fadeIn 2s ease;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  margin-top: 15px;
+  background-color: #700db1;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e28bbe;
+  transform: translateY(-5px);
+}
+
+.content-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  padding: 28px;
+  border: 1px solid #cbd5e1;
+  border-radius: 18px;
+  background-color: white;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  color: white;
+  background-color: #0f172a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .site-header,
+  nav {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
